@@ -27,7 +27,7 @@ const listTask = () => {
 
   const titleList = document.createElement('li');
   titleList.classList.add('todolist-title');
-  titleList.innerText = 'Today\'s To Do';
+  titleList.innerText = "Today's To Do";
   const addList = document.createElement('li');
   addList.classList.add('todolist-add');
   addList.innerText = 'Add to your list...';
@@ -37,9 +37,7 @@ const listTask = () => {
   const sortedListData = _.sortBy(listData, 'index');
   sortedListData.forEach((list) => {
     const data = document.createElement('li');
-    data.innerHTML = `<input type="checkbox" class="black-checkbox" ${
-      list.completed ? 'checked' : ''
-    }>
+    data.innerHTML = `<input type="checkbox" ${list.completed ? 'checked' : ''}>
     <p>${list.description}</p>`;
     toDoList.appendChild(data);
   });
