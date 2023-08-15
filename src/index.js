@@ -27,7 +27,7 @@ const listTask = () => {
 
   const titleList = document.createElement('li');
   titleList.classList.add('todolist-title');
-  titleList.innerText = `Today's To Do`;
+  titleList.innerText = 'Today\'s To Do';
   const addList = document.createElement('li');
   addList.classList.add('todolist-add');
   addList.innerText = 'Add to your list...';
@@ -44,7 +44,7 @@ const listTask = () => {
     toDoList.appendChild(data);
   });
   const buttonList = document.createElement('li');
-  buttonList.innerHTML = `<button>Clear all completed</button>`;
+  buttonList.innerHTML = '<button>Clear all completed</button>';
   toDoList.appendChild(buttonList);
 };
 

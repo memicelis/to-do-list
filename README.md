@@ -31,33 +31,16 @@
 
 # 📖 [To Do List] <a name="about-project"></a>
 
-[To Do List] is a project that was given by Microverse to make book managament app designed to help users organize their reading interests. App is structured in three sections: book list for personal library of books, add book for adding new books and contact where you can reach users via various options.
+[To Do List] is project about adding and removing your tasks.
 
 ## 🛠 Built With <a name="built-with"></a>
 
 - **[html]**
 - **[javascript]**
 - **[css]**
-
-<!-- Features -->
-
-### Key Features <a name="key-features"></a>
-
-- **[multiple sections]**
-- **[navigation]**
-- **[footer]**
+- \*\*[webpack]
 
 <p align="right">(<a href="#readme-top">back  to top</a>)</p>
-
-<!-- LIVE DEMO -->
-
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://memicelis.github.io/awesome-books/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -69,7 +52,7 @@ To get a local copy up and running, follow these steps.
 
 Clone this repository to your desired folder:
 
-> Open GitHub and go to my GitHub repository name: web-development-bootcamp .to clone.
+> Open GitHub and go to my GitHub repository name: to-do-list .to clone.
 > Click “Code” and copy the given URL.
 > click code and copy the URL.
 
@@ -81,13 +64,13 @@ Clone this repository to your desired folder:
 
 > Syntax:
 
-$ git clone https://github.com/memicelis/awesome-books.git
+$ git clone https://github.com/memicelis/to-do-list.git
 
 ### Usage
 
 To run the project, execute the following command:
 
-> open your directory awesome-books
+> open your directory to-do-list
 > to run the file :
 > \use vs-code or any IDE to view line code .
 
