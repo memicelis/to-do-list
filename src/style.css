@@ -11,7 +11,7 @@ body {
 
 .container {
   border: 1px solid black;
-  margin: 10%;
+  margin: 10% 30%;
 }
 
 .to-do-list {
@@ -19,9 +19,10 @@ body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  font-size: 32px;
 }
 
-.to-do-list li {
+li {
   border: 1px solid rgb(188, 188, 188);
   display: flex;
   gap: 12px;
@@ -30,17 +31,54 @@ body {
   padding: 1%;
 }
 
-.todolist-add {
-  font-style: italic;
-  color: silver;
+.todolist-title {
+  font-size: 24px;
+  padding: 1%;
 }
 
-.to-do-list li:last-child {
-  padding: 0;
+.todolist-add {
+  color: silver;
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.todolist-add input {
   border: none;
 }
 
-.to-do-list li:last-child button {
+.todolist-add input::placeholder {
+  font-style: italic;
+  border: none;
+}
+
+.add-button {
+  cursor: pointer;
+}
+
+.to-do-list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.task-data:focus {
+  outline: none;
+}
+
+.task-description {
+  border: none;
+}
+
+.task-description:focus {
+  border: none;
+  outline: none;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+button {
   width: 100%;
   padding: 1%;
   font-size: 16px;
