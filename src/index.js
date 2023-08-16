@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import './style.css';
 
 const listData = [
@@ -20,21 +19,8 @@ const listData = [
 ];
 
 const listTask = () => {
-  const toDoListContainer = document.getElementById('to-do-list-container');
-  const toDoList = document.createElement('ul');
-  toDoList.classList.add('to-do-list');
-  toDoListContainer.appendChild(toDoList);
-
-  const titleList = document.createElement('li');
-  titleList.classList.add('todolist-title');
-  titleList.innerText = "Today's To Do";
-  const addList = document.createElement('li');
-  addList.classList.add('todolist-add');
-  addList.innerText = 'Add to your list...';
-
-  toDoList.appendChild(titleList);
-  toDoList.appendChild(addList);
-  const sortedListData = _.sortBy(listData, 'index');
+  const toDoList = document.getElementById('todo-list');
+  const sortedListData = listData.slice().sort((a, b) => a.index - b.index);
   sortedListData.forEach((list) => {
     const data = document.createElement('li');
     data.innerHTML = `<input type="checkbox" ${list.completed ? 'checked' : ''}>
