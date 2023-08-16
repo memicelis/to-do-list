@@ -38,7 +38,7 @@
 - **[html]**
 - **[javascript]**
 - **[css]**
-- \*\*[webpack]
+- **[webpack]**
 
 <p align="right">(<a href="#readme-top">back  to top</a>)</p>
 
@@ -47,6 +47,16 @@
 > Describe how a new developer could make use of your project.
 
 To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+Example command:
+
+```sh
+ install vs code or any other text editor.
+```
 
 ### Setup
 
@@ -66,6 +76,14 @@ Clone this repository to your desired folder:
 
 $ git clone https://github.com/memicelis/to-do-list.git
 
+### Install
+
+Install this project with:
+
+Example command:
+
+$ npm install -g npm
+
 ### Usage
 
 To run the project, execute the following command:
@@ -73,6 +91,10 @@ To run the project, execute the following command:
 > open your directory to-do-list
 > to run the file :
 > \use vs-code or any IDE to view line code .
+
+```sh
+$ npm start
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
