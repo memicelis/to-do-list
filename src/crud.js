@@ -1,7 +1,8 @@
+import { clearingCheckBox, clearAllCompleted } from './clear';
 const addButton = document.querySelector('.add-button');
 const taskDescription = document.querySelector('.task-data');
 const toDoList = document.getElementById('todo-list');
-
+const deleteButton = document.getElementById('clear');
 let listData = [];
 
 // DISPLAY TASKS
@@ -11,15 +12,19 @@ const displayTasks = () => {
   const sortedListData = listData.slice().sort((a, b) => a.index - b.index);
   sortedListData.forEach((list) => {
     const data = document.createElement('li');
-    data.innerHTML = `<input type="checkbox" class="task" ${
-      list.completed ? 'checked' : ''
-    }>
+    data.innerHTML = `<input type="checkbox" class="task" data-index="${
+      list.index
+    }" ${list.completed ? 'checked' : ''}>
       <input type="text" class="task-description" value="${
-  list.description
-}"></input><span class="delete-icon" data-index="${
-  list.index
-}">&#128465;</span>`;
+        list.description
+      }"></input><span class="delete-icon" data-index="${
+      list.index
+    }">&#128465;</span>`;
     toDoList.appendChild(data);
+  });
+  const checkboxes = document.querySelectorAll('.task');
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener('click', clearingCheckBox);
   });
 };
 
@@ -84,9 +89,16 @@ toDoList.addEventListener('click', (e) => {
       const listItem = descriptionElement.closest('li');
       const taskIndex = parseInt(
         listItem.querySelector('.delete-icon').getAttribute('data-index'),
-        10,
+        10
       );
       updateTaskDescription(taskIndex, newDescription);
     });
   }
+});
+
+// CLEAR ALL COMPLETED
+deleteButton.addEventListener('click', () => {
+  clearAllCompleted();
+  toDoList.innerHTML = '';
+  displayTasks();
 });
