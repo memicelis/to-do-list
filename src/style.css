@@ -54,6 +54,7 @@ li {
 
 .add-button {
   cursor: pointer;
+  color: black;
 }
 
 .to-do-list li {
@@ -76,6 +77,7 @@ li {
 
 .delete-icon {
   cursor: pointer;
+  color: blue;
 }
 
 button {
