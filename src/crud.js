@@ -17,15 +17,15 @@ const displayTasks = () => {
       list.index
     }" ${list.completed ? 'checked' : ''}>
       <input type="text" class="task-description" value="${
-  list.description
-}"></input><span class="delete-icon" data-index="${
-  list.index
-}">&#128465;</span>`;
+        list.description
+      }"></input><span class="delete-icon" data-index="${
+      list.index
+    }">&#128465;</span>`;
     toDoList.appendChild(data);
   });
   const checkboxes = document.querySelectorAll('.task');
   checkboxes.forEach((checkbox) => {
-    checkbox.addEventListener('click', clearingCheckBox);
+    checkbox.addEventListener('change', clearingCheckBox);
   });
 };
 
@@ -90,7 +90,7 @@ toDoList.addEventListener('click', (e) => {
       const listItem = descriptionElement.closest('li');
       const taskIndex = parseInt(
         listItem.querySelector('.delete-icon').getAttribute('data-index'),
-        10,
+        10
       );
       updateTaskDescription(taskIndex, newDescription);
     });
