@@ -1,4 +1,5 @@
-import { clearingCheckBox, clearAllCompleted } from './clear';
+import { clearingCheckBox, clearAllCompleted } from './clear.js';
+
 const addButton = document.querySelector('.add-button');
 const taskDescription = document.querySelector('.task-data');
 const toDoList = document.getElementById('todo-list');
@@ -16,10 +17,10 @@ const displayTasks = () => {
       list.index
     }" ${list.completed ? 'checked' : ''}>
       <input type="text" class="task-description" value="${
-        list.description
-      }"></input><span class="delete-icon" data-index="${
-      list.index
-    }">&#128465;</span>`;
+  list.description
+}"></input><span class="delete-icon" data-index="${
+  list.index
+}">&#128465;</span>`;
     toDoList.appendChild(data);
   });
   const checkboxes = document.querySelectorAll('.task');
@@ -89,7 +90,7 @@ toDoList.addEventListener('click', (e) => {
       const listItem = descriptionElement.closest('li');
       const taskIndex = parseInt(
         listItem.querySelector('.delete-icon').getAttribute('data-index'),
-        10
+        10,
       );
       updateTaskDescription(taskIndex, newDescription);
     });
