@@ -23,6 +23,7 @@
   - [Deployment](#deployment)
 - [👥 Authors](#authors)
 - [🤝 Contributing](#contributing)
+- [🔭 Future Features](#future-features)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
@@ -41,6 +42,19 @@
 - **[webpack]**
 
 <p align="right">(<a href="#readme-top">back  to top</a>)</p>
+
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+
+> Describe between 1-3 key features of the application.
+
+- **[add task]**
+- **[remove task]**
+- **[delete task]**
+- **[clear completed tasks]**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
@@ -106,6 +120,16 @@ $ npm start
 
 - GitHub: [@memicelis](https://github.com/memicelis)
 - LinkedIn: [Elis Memic](https://www.linkedin.com/in/elis-memic-0a7393bb)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[drag and drop]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
