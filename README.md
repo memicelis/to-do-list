@@ -82,7 +82,7 @@ Install this project with:
 
 Example command:
 
-$ npm install -g npm
+$ npm install
 
 ### Usage
 

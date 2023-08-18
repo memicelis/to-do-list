@@ -8,10 +8,18 @@
   </head>
   <body>
     <section class="container">
-      <ul class="to-do-list" id="todo-list">
-        <li class="todolist-title">Today's To Do</li>
-        <li class="todolist-add">Add to your list...</li>
-      </ul>
+      <h4 class="todolist-title">Today's To Do</h4>
+
+      <div class="todolist-add">
+        <input
+          type="text"
+          placeholder="Add to your list..."
+          class="task-data"
+        />
+        <a class="add-button">&rarr;</a>
+      </div>
+      <ul class="to-do-list" id="todo-list"></ul>
+      <button>Clear all completed</button>
     </section>
   </body>
 </html>
