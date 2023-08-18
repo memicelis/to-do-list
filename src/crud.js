@@ -1,7 +1,9 @@
+import { clearingCheckBox, clearAllCompleted } from './clear.js';
+
 const addButton = document.querySelector('.add-button');
 const taskDescription = document.querySelector('.task-data');
 const toDoList = document.getElementById('todo-list');
-
+const deleteButton = document.getElementById('clear');
 let listData = [];
 
 // DISPLAY TASKS
@@ -11,15 +13,19 @@ const displayTasks = () => {
   const sortedListData = listData.slice().sort((a, b) => a.index - b.index);
   sortedListData.forEach((list) => {
     const data = document.createElement('li');
-    data.innerHTML = `<input type="checkbox" class="task" ${
-      list.completed ? 'checked' : ''
-    }>
+    data.innerHTML = `<input type="checkbox" class="task" data-index="${
+      list.index
+    }" ${list.completed ? 'checked' : ''}>
       <input type="text" class="task-description" value="${
   list.description
 }"></input><span class="delete-icon" data-index="${
   list.index
 }">&#128465;</span>`;
     toDoList.appendChild(data);
+  });
+  const checkboxes = document.querySelectorAll('.task');
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener('change', clearingCheckBox);
   });
 };
 
@@ -89,4 +95,11 @@ toDoList.addEventListener('click', (e) => {
       updateTaskDescription(taskIndex, newDescription);
     });
   }
+});
+
+// CLEAR ALL COMPLETED
+deleteButton.addEventListener('click', () => {
+  clearAllCompleted();
+  toDoList.innerHTML = '';
+  displayTasks();
 });
