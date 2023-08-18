@@ -31,19 +31,24 @@ li {
   padding: 1%;
 }
 
+.todolist-title,
+.todolist-add,
+button {
+  padding: 1%;
+}
+
 .todolist-title {
   font-size: 24px;
-  padding: 1%;
 }
 
 .todolist-add {
   color: silver;
   display: flex;
   justify-content: space-between;
-  padding: 1%;
 }
 
-.todolist-add input {
+.todolist-add input,
+.task-description {
   border: none;
 }
 
@@ -62,17 +67,13 @@ li {
   justify-content: space-between;
 }
 
-.task-data:focus {
+.task-data:focus,
+.task-description:focus {
   outline: none;
-}
-
-.task-description {
-  border: none;
 }
 
 .task-description:focus {
   border: none;
-  outline: none;
 }
 
 .delete-icon {
@@ -82,6 +83,5 @@ li {
 
 button {
   width: 100%;
-  padding: 1%;
   font-size: 16px;
 }
