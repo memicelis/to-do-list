@@ -1,4 +1,4 @@
-import { displayTasks } from './display';
+import displayTasks from './display.js';
 
 export const addTask = () => {
   const listData = [];
@@ -12,7 +12,7 @@ export const addTask = () => {
       description: 'Mock Test 2',
       completed: false,
       index: 1,
-    }
+    },
   );
   localStorage.setItem('tasksData', JSON.stringify(listData));
   displayTasks();

@@ -1,4 +1,4 @@
-import { addTask, removeTask } from '../__mocks__/addRemoveTask';
+import { addTask, removeTask } from '../__mocks__/addRemoveTask.js';
 
 describe('ADDING ITEMS', () => {
   beforeEach(() => {
