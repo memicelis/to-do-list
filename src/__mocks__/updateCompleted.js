@@ -1,5 +1,3 @@
-import displayTasks from './display.js';
-
 const updateCompleted = () => {
   const checkBox = document.querySelector('.task');
   if (!checkBox) return;
@@ -7,7 +5,7 @@ const updateCompleted = () => {
   const tasksLocalStorage = JSON.parse(localStorage.getItem('tasksData')) || [];
 
   const clickedCheckbox = tasksLocalStorage.find(
-    (task) => task.index === index
+    (task) => task.index === index,
   );
   clickedCheckbox.completed = !clickedCheckbox.completed;
 

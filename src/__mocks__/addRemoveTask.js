@@ -12,7 +12,7 @@ export const addTask = () => {
       description: 'Mock Test 2',
       completed: true,
       index: 1,
-    }
+    },
   );
   localStorage.setItem('tasksData', JSON.stringify(listData));
   displayTasks();

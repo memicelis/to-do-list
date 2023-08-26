@@ -12,7 +12,7 @@ const editTask = (index, newDescription) => {
       description: 'Mock Test 2',
       completed: true,
       index: 1,
-    }
+    },
   );
   const taskToUpdate = listData.find((task) => task.index === index);
   if (taskToUpdate) {
