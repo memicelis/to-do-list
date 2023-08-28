@@ -117,7 +117,17 @@ To run the project, execute the following command:
 > \use vs-code or any IDE to view line code .
 
 ```sh
-$ npm start
+  npm start
+```
+
+### Run tests
+
+To run tests, run the following command:
+
+Example command:
+
+```sh
+  npm test
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
