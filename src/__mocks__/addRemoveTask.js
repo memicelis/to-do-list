@@ -10,7 +10,7 @@ export const addTask = () => {
     },
     {
       description: 'Mock Test 2',
-      completed: false,
+      completed: true,
       index: 1,
     },
   );
